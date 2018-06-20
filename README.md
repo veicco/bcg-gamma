@@ -41,13 +41,32 @@ daily rain and temperature statistics. However, it turned out that the weather d
 not improve the prediction performance, which is why I decided not to use it in the final solution.
 
 ### Methodology
-#### Downloading and Cleaning Data
+#### Acquiring Data
+First I had to decide what data to use for training. Obviously it would have been ideal to start with 
+as much as possible historical data from all possible TMSs. However, as the data has been stored in
+separate workbooks per each month and each location, I would have needed to download thousands of
+Excel files. Thus, I decided to limit the training data to those three stations that I needed to
+forecast volumes for: Askisto, Mäntsälä and Kemijärvi. To downloads these files, I wrote a script that
+loops through each month from 2010 to 2017 and generates urls for the files.
+
+Once the raw data was downloaded, I converted the xls files to csv format and combined them into a 
+single csv file "raw_dataset.csv".
+
+Finally, I improved the raw data by renaming the columns and adding calculated features
+'week of year' and 'weekday'. 
 
 #### Prediction Model
+As the forecasting problem is a time series kind, i.e. having seasonality and trend components, 
+a natural approach would be to use time series methods, such as ARMA or ARIMA. On the other hand,
+in this era of deep learning, I considered trying Recurrent Neural Network (RNN) which would
+be good at modelling complicated long-term relationships between the inputs.
+
+Before going deep with the neural networks, I tried a more simple approach: Random Forest Regression (RF).
+The motivation for trying RF is 
 
 #### Testing
 
 ### Results
 
-## Licences
+## Open Source Licences
 
