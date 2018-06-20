@@ -13,6 +13,13 @@ traffic volumes per vehicle category:
 - Solution submission DL: 21.6.2016
 
 ## Solution
+All source code of the solution is included in Jupyter notebooks (.ipynb files):
+- [1 Download Raw Data.ipynb](https://github.com/KovaVeikko/bcg-gamma/blob/master/1%20Download%20Raw%20Data.ipynb)
+- [2 Refine Data.ipynb](https://github.com/KovaVeikko/bcg-gamma/blob/master/2%20Refine%20Data.ipynb)
+- [3 Prediction.ipynb](https://github.com/KovaVeikko/bcg-gamma/blob/master/3%20Prediction.ipynb)
+- [4 Visualization.ipynb](https://github.com/KovaVeikko/bcg-gamma/blob/master/4%20Visualization.ipynb)
+- [5 User Interface.ipynb](https://github.com/KovaVeikko/bcg-gamma/blob/master/5%20User%20Interface.ipynb)
+
 ### Data
 #### Historical TMS Data
 Historical TMS data, or historical volumes, is provided in Excel workbooks: 
@@ -38,7 +45,7 @@ not improve the prediction performance, which is why I decided not to use it in 
 
 #### Prediction Model
 
-### Testing
+#### Testing
 
 ### Results
 
