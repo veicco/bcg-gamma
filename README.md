@@ -22,6 +22,9 @@ All source code of the solution is included in Jupyter notebooks (.ipynb files):
 - [4 Visualization.ipynb](https://github.com/KovaVeikko/bcg-gamma/blob/master/4%20Visualization.ipynb)
 - [5 User Interface.ipynb](https://github.com/KovaVeikko/bcg-gamma/blob/master/5%20User%20Interface.ipynb)
 
+Simplified source code of the model is included in submission/ directory as 
+[model.py](https://github.com/KovaVeikko/bcg-gamma/blob/master/submission/model.py)
+
 ### Data
 #### Historical TMS Data
 Historical TMS data, or historical volumes, is provided in Excel workbooks: 
