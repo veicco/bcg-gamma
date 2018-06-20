@@ -97,6 +97,9 @@ This data can be used to view predictions with different parameters. I have made
 [notebook](https://github.com/KovaVeikko/bcg-gamma/blob/master/5%20User%20Interface.ipynb)
 for selecting the forecast and plotting it.
 
+The predictions for the actual target period 22.6. - 26.6.2018 is saved as 
+[prediction_22062018_26062019.csv](https://github.com/KovaVeikko/bcg-gamma/blob/master/prediction_22062018_26062019.csv).
+
 As examples, below is attached a couple of graphs of the forecast period.
 Figure 1 visualizes the predicted volumes of cars and vans to direction 1 in Mäntsälä.
 Figure 2 in turn shows comparison of predicted and realized volumes of buses in Askisto
@@ -114,6 +117,13 @@ between 2018 and 2016 + 2017.
 
 
 ### Generalization
+As the model has been trained with 10 years of hourly data from three TMS, the model
+generalizes well to these locations (Askisto, Mäntsälä, Kemijärvi). That is, the model
+can be used for predicting hourly volumes of any vehicle type over any future period
+as long as the location is one of the three.
+
+To extend the model to produce meaningful predictions to other locations, one has to
+retrain the model so that TMS data from the desired locations is included.
 
 ## Open Source Licences
 
