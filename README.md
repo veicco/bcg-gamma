@@ -61,8 +61,12 @@ a natural approach would be to use time series methods, such as ARMA or ARIMA. O
 in this era of deep learning, I considered trying Recurrent Neural Network (RNN) which would
 be good at modelling complicated long-term relationships between the inputs.
 
-Before going deep with the neural networks, I tried a more simple approach: Random Forest Regression (RF).
-The motivation for trying RF is 
+However, before diving into the neural networks, I decided to try a more simple yet sophisticated approach: 
+Random Forest Regression (RF). The motivation was that the underlying forecasting problem involves various
+components that cause regular variations, such as public holidays, weekends, rush hours and seasons.
+Specifically, as we are interested in period 22.6. - 26.6.2018 which happens to include the Midsummer's
+Eve, we need to pay special attention to these variations. Furthermore, RF is significantly simpler
+than RNN in terms of computing efficiency and hyper parameter tuning.
 
 #### Testing
 
