@@ -62,15 +62,35 @@ in this era of deep learning, I considered trying Recurrent Neural Network (RNN)
 be good at modelling complicated long-term relationships between the inputs.
 
 However, before diving into the neural networks, I decided to try a more simple yet sophisticated approach: 
-Random Forest Regression (RF). The motivation was that the underlying forecasting problem involves various
+Random Forest Regression (RF). My motivation was that the underlying forecasting problem involves various
 components that cause regular variations, such as public holidays, weekends, rush hours and seasons.
 Specifically, as we are interested in period 22.6. - 26.6.2018 which happens to include the Midsummer's
 Eve, we need to pay special attention to these variations. Furthermore, RF is significantly simpler
 than RNN in terms of computing efficiency and hyper parameter tuning.
 
+I used RandomForestRegressor from scikit-learn python library. The model turned out to perform very well, 
+so I stayed with it. In fact, the score (mean accuracy) on the test data was 0.97  right away without 
+further tuning, so I used the default settings. 
+
 #### Testing
+In order to test performance of the model, I divided the TMS data into training and test sets with
+80/20 split. This resulted in 85936 observations for training and 21484 for testing.
+The test data was selected randomly and it was not used for training the model.
+
+The performance was measured using R^2 = (1 - u/v), where u is the regression
+sum of squares sum((y_true - y_pred)^2) and v is the residual
+sum of squares sum((y_true - mean(y_true))^2). The best possible score is 1.0.
+
+The score on the test data was 0.97 which is very good. Additionally, as the objective was
+to produce forecasts for Thu 22.6. - Tue 26.6., I tested the model on the corresponding dates
+last year (from week 25 Thu to week 26 Tue). This score was 0.997, thus being nearly perfect.
+However, the latter score is vulnerable to high variance (overfitting), as there is a good 
+chance that this test data was used for training. That suggests however that the model recognizes
+special dates, such as the Midsummer's Eve.
 
 ### Results
+
+### Generalization
 
 ## Open Source Licences
 
