@@ -90,6 +90,8 @@ However, the latter score is vulnerable to high variance (overfitting), as there
 chance that this test data was used for training. The high score suggests however that the 
 model recognizes special dates, such as the Midsummer's Eve.
 
+As there was no need for tuning hyper parameters, a cross-validation set was not incorporated. 
+
 ### Results
 Using the trained model, I generated prediction time series for year 2018 and saved as 
 [prediction_ts.csv](https://github.com/KovaVeikko/bcg-gamma/blob/master/prediction_ts.csv).
