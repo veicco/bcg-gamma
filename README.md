@@ -116,7 +116,7 @@ between 2018 and 2016 + 2017.
 </div>
 
 
-### Generalization
+### Generalizability
 As the model has been trained with 10 years of hourly data from three TMS, the model
 generalizes well to these locations (Askisto, Mäntsälä, Kemijärvi). That is, the model
 can be used for predicting hourly volumes of any vehicle type over any future period
@@ -124,6 +124,4 @@ as long as the location is one of the three.
 
 To extend the model to produce meaningful predictions to other locations, one has to
 retrain the model so that TMS data from the desired locations is included.
-
-## Open Source Licences
 
