@@ -103,12 +103,12 @@ Figure 2 in turn shows comparison of predicted and realized volumes of buses in 
 between 2018 and 2016 + 2017.
 
 <div>
-  <label>Figure 1</label>
+  <label>Figure 1 Predicted volumes of cars and vans in Mäntsälä</label>
   <img src="./mantsala_prediction.png"/>
 </div>
 
 <div>
-  <label>Figure 2</label>
+  <label>Figure 2 Comparison between realized and predicted volumes of buses in Askisto</label>
   <img src="./askisto_comparison.png"/>
 </div>
 
