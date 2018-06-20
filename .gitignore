@@ -1,8 +1,4 @@
 venv/
 .ipynb_checkpoints/
-*.csv
 data*/
 *.DS_Store
-!prediction_ts.csv
-!historical_ts.csv
-!refined_dataset.csv
