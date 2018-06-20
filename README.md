@@ -12,6 +12,8 @@ traffic volumes per vehicle category:
 - Forecasts for three specified TMS locations: Askisto, Mäntsälä and Kemijärvi
 - Solution submission DL: 21.6.2016
 
+Full details of the assignment: [BCG Gamma Data Science Competition Document.pdf](https://github.com/KovaVeikko/bcg-gamma/blob/master/BCG%20Gamma%20Data%20Science%20Competition%20Document.pdf)
+
 ## Solution
 All source code of the solution is included in Jupyter notebooks (.ipynb files):
 - [1 Download Raw Data.ipynb](https://github.com/KovaVeikko/bcg-gamma/blob/master/1%20Download%20Raw%20Data.ipynb)
@@ -85,10 +87,31 @@ The score on the test data was 0.97 which is very good. Additionally, as the obj
 to produce forecasts for Thu 22.6. - Tue 26.6., I tested the model on the corresponding dates
 last year (from week 25 Thu to week 26 Tue). This score was 0.997, thus being nearly perfect.
 However, the latter score is vulnerable to high variance (overfitting), as there is a good 
-chance that this test data was used for training. That suggests however that the model recognizes
-special dates, such as the Midsummer's Eve.
+chance that this test data was used for training. The high score suggests however that the 
+model recognizes special dates, such as the Midsummer's Eve.
 
 ### Results
+Using the trained model, I generated prediction time series for year 2018 and saved as 
+[prediction_ts.csv](https://github.com/KovaVeikko/bcg-gamma/blob/master/prediction_ts.csv).
+This data can be used to view predictions with different parameters. I have made a 
+[notebook](https://github.com/KovaVeikko/bcg-gamma/blob/master/5%20User%20Interface.ipynb)
+for selecting the forecast and plotting it.
+
+As examples, below is attached a couple of graphs of the forecast period.
+Figure 1 visualizes the predicted volumes of cars and vans to direction 1 in Mäntsälä.
+Figure 2 in turn shows comparison of predicted and realized volumes of buses in Askisto
+between 2018 and 2016 + 2017.
+
+<div>
+  <label>Figure 1</label>
+  <img src="./mantsala_prediction.png"/>
+</div>
+
+<div>
+  <label>Figure 2</label>
+  <img src="./askisto_comparison.png"/>
+</div>
+
 
 ### Generalization
 
