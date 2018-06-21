@@ -71,7 +71,9 @@ Random Forest Regression (RF). My motivation was that the underlying forecasting
 components that cause regular variations, such as public holidays, weekends, rush hours and seasons.
 Specifically, as we are interested in period 22.6. - 26.6.2018 which happens to include the Midsummer's
 Eve, we need to pay special attention to these variations. Furthermore, RF is significantly simpler
-than RNN in terms of computing efficiency and hyper parameter tuning.
+than RNN in terms of computing efficiency and hyper parameter tuning. One weakness that I can imagine
+is that RF may not be good at recognizing long-term trends. This is not a problem however, as we are
+not interested in long-term predictions in this challenge.
 
 I used RandomForestRegressor from scikit-learn python library. The model turned out to perform very well, 
 so I stayed with it. In fact, the score (mean accuracy) on the test data was 0.97  right away without 
