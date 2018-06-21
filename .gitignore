@@ -3,3 +3,5 @@ venv/
 data*/
 *.DS_Store
 *.docx
+*.zip
+.idea/
