@@ -1,5 +1,5 @@
 # BCG Gamma Data Science Competition 2018
-This project is a solution to BCG's data science competition in Summer 2018.
+This project includes a solution to BCG's data science competition in Summer 2018.
 
 ## About
 The competition is based on Finnish Transport Agency's open road traffic data
