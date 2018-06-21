@@ -156,7 +156,7 @@ def to_ts_format(data):
 
 # split the raw data to train and test sets
 print("Importing raw data...")
-raw_data = pd.read_csv("../refined_dataset.csv").sort_values(by="date")
+raw_data = pd.read_csv("refined_dataset.csv").sort_values(by="date")
 raw_data = raw_data.drop(["sum", "location_name", "date"], axis=1)
 model_data = raw_data
 print("Reformatting data...")
@@ -179,8 +179,8 @@ location_ids=[168, 1403, 110]
 vehicle_types=["13 Linja-autot", "12 KAIP", "11 HA-PA"]
 generated = generate_prediction_series(model, dates=prediction_period, location_ids=location_ids, vehicle_types=vehicle_types)
 generated_ts = to_ts_format(generated)
-generated_ts.to_csv("prediction_22062018_26062019.csv", index=False)
-print("Generated prediction data: prediction_22062018_26062019.csv.")
+generated_ts.to_csv("prediction_22062018_26062018.csv", index=False)
+print("Generated prediction data: prediction_22062018_26062018.csv.")
 
 
 
