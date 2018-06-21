@@ -203,7 +203,7 @@ location_ids=[168, 1403, 110]
 vehicle_types=["13 Linja-autot", "12 KAIP", "11 HA-PA"]
 generated = generate_prediction_series(model, dates=prediction_period, location_ids=location_ids, vehicle_types=vehicle_types)
 generated_ts = to_ts_format(generated)
-generated_ts.to_csv("prediction_22062018_26062018.csv", index=False)
+generated_ts.round(0).to_csv("prediction_22062018_26062018.csv", index=False)
 print("Generated prediction data: prediction_22062018_26062018.csv.")
 
 
