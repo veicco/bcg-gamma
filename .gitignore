@@ -2,3 +2,4 @@ venv/
 .ipynb_checkpoints/
 data*/
 *.DS_Store
+*.docx
