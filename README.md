@@ -103,7 +103,7 @@ This data can be used to view predictions with different parameters. I have made
 for selecting the forecast and plotting it.
 
 The predictions for the actual target period 22.6. - 26.6.2018 is saved as 
-[prediction_22062018_26062019.csv](https://github.com/KovaVeikko/bcg-gamma/blob/master/submission/prediction_22062018_26062019.csv).
+[prediction_22062018_26062018.csv](https://github.com/KovaVeikko/bcg-gamma/blob/master/submission/prediction_22062018_26062018.csv).
 
 As examples, below is attached a couple of graphs of the forecast period.
 Figure 1 visualizes the predicted volumes of cars and vans to direction 1 in Mäntsälä.
