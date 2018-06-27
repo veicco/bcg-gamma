@@ -122,7 +122,7 @@ the figure once I get the accurate figures of each vehicle type.
 
 <div>
   <label>Figure 1. Initial estimation of the actual and the predicted total volumes in each location.</label>
-  <img src="./actual_vs_predicted.png"/>
+  <img src="./actual_vs_predicted.jpg"/>
 </div>
 
 
