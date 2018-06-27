@@ -107,11 +107,6 @@ for selecting the forecast and plotting it.
 The predictions for the actual target period 22.6. - 26.6.2018 is saved as 
 [prediction_22062018_26062018.csv](https://github.com/KovaVeikko/bcg-gamma/blob/master/submission/prediction_22062018_26062018.csv).
 
-As examples, below is attached a couple of graphs of the forecast period.
-Figure 1 visualizes the predicted volumes of cars and vans to direction 1 in Mäntsälä.
-Figure 2 in turn shows comparison of predicted and realized volumes of buses in Askisto
-between 2018 and 2016 + 2017.
-
 I recorded total volumes of each location during the target period from a 
 [real time API](https://tie.digitraffic.fi/api/v1/data/tms-data/24403). From this API
 I got total volumes of each possible vehicle types from each locations (both directions).
