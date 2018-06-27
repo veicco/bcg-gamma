@@ -112,14 +112,17 @@ Figure 1 visualizes the predicted volumes of cars and vans to direction 1 in Mä
 Figure 2 in turn shows comparison of predicted and realized volumes of buses in Askisto
 between 2018 and 2016 + 2017.
 
-<div>
-  <label>Figure 1 Predicted volumes of cars and vans in Mäntsälä</label>
-  <img src="./mantsala_prediction.png"/>
-</div>
+I recorded total volumes of each location during the target period from a 
+[real time API](https://tie.digitraffic.fi/api/v1/data/tms-data/24403). From this API
+I got total volumes of each possible vehicle types from each locations (both directions).
+Since my prediction only includes three of seven vehicle types, this data is not accurate.
+It however gives an approximate estimate, as the three types represent a major part of the
+total volume, thus providing some intuition how well the model performed. I will update 
+the figure once I get the accurate figures of each vehicle type. 
 
 <div>
-  <label>Figure 2 Comparison between realized and predicted volumes of buses in Askisto</label>
-  <img src="./askisto_comparison.png"/>
+  <label>Figure 1. Initial estimation of the actual and the predicted total volumes in each location.</label>
+  <img src="./actual_vs_predicted.png"/>
 </div>
 
 
